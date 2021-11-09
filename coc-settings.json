@@ -1,0 +1,7 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["css", "scss", "sass", "markdown", "python", "javascript", "typescript", "vue"],
+	"python.linting.lintOnSave": true,
+	"python.formatting.provider": "autopep8",
+	"eslint.autoFixOnSave": true,
+	"eslint.format.enable": true
+}

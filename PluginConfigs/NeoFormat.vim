@@ -8,8 +8,18 @@
 "       \ 'valid_exit_codes': [0, 23],
 "       \ 'no_append': 1
 "       \ }
+" let g:neoformat_python_autopep8 = {
+"       \ 'exe': 'autopep8',
+"       \ 'args': ['-s 4', '-E', '-a'],
+"       \ 'replace': 1,
+"       \ 'stdin': 1,
+"       \ 'env': ["DEBUG=1"],
+"       \ 'valid_exit_codes': [0, 23],
+"       \ 'no_append': 1
+"       \ }
 
 let g:neoformat_enabled_python = ['autopep8', 'yapf', 'docformatter']
+" let g:neoformat_enabled_python = ['autopep8']
 
 " Enable alignment
 let g:neoformat_basic_format_align = 1
@@ -33,7 +43,14 @@ let g:neoformat_enabled_kotlin = ['prettier']
 
 " Javascript
 " let g_neoformat_enabled_javascript = ['js-beautify', 'prettier', 'prettydiff', 'clang-format', 'esformatter', 'prettier-eslint', 'eslint_d', 'standard', 'semistandard', 'deno fmt']
-let g:neoformat_enabled_javascript = ['js-beautify', 'prettier', 'prettier-eslint', 'eslint_d']
+let g:neoformat_javascript_eslint_d = {
+			\ 'exe': 'eslint_d',
+			\ 'args': ['--fix-to-stdout'],
+			\ 'stdin': 1,
+			\ 'replace': 1
+			\ }
+" let g:neoformat_enabled_javascript = ['eslint_d']
+" let g:neoformat_enabled_javascript = ['prettier', 'prettier-eslint', 'eslint_d']
 let g:neoformat_enabled_vue = ['prettier', 'tslint', 'eslint_d', 'prettier-eslint', 'js-beautify']
 let g:neoformat_enabled_typescript = ['prettier', 'tslint', 'eslint_d']
 
@@ -44,6 +61,6 @@ let g:neoformat_enabled_c = ['clang-formatter']
 " CSS
 let g:neoformat_enabled_css = ['prettier']
 augroup fmt
-	autocmd!
-	autocmd BufWritePre * undojoin | Neoformat
+	" autocmd!
+	" autocmd BufWritePre * undojoin | Neoformat
 augroup END

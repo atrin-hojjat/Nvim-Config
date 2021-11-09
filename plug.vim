@@ -5,6 +5,9 @@ Plug 'udalov/kotlin-vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'https://github.com/preservim/nerdtree'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " ^b to init
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -17,6 +20,10 @@ Plug 'nvim-lua/telescope.nvim'
 Plug 'https://github.com/vim-syntastic/syntastic'
 Plug 'jparise/vim-graphql'
 Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/denite.nvim'
 " Plug 'zxqfl/tabnine-vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ap/vim-css-color'
