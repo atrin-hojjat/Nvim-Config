@@ -4,7 +4,7 @@ let g:hybrid_custom_term_colors=0
 "let g:solarized_termtrans=1
 set background=dark
 
-let iterm_profile = $ITERM_PROFILE
+let profile = $DEFAULT_NVIM_PROFILE
 
 function SetProfile(profile)
 	if a:profile == 'Rigel'
@@ -84,4 +84,4 @@ function SetProfile(profile)
 	endif
 endfunction
 
-call SetProfile(iterm_profile)
+call SetProfile(profile)
